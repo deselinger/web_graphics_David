@@ -1,5 +1,25 @@
 <html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.js"></script>
+    </head>
 <body>
-processing example #1
+    <h1>ProcessingExample</h1>
+    <hr>
+    <a href="/static/examples.html">(examples)</a>
+    <hr>
+    <script type = "application/processing" data-processing-target="my_canvas">
+
+        void setup(){
+            size(500, 500);
+            background(100);
+            stroke(255);
+        }
+
+        void draw(){
+            ellipse(random(250), random(250), 25, 25)
+        }
+
+    </script>
+    <canvas id=  "my_canvas"></canvas>
 </body>
 </html>
