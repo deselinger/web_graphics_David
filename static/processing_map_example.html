@@ -5,9 +5,12 @@
     <body>
         <h1>Processing Map Example</h1>
         <hr>
+<<<<<<< HEAD
         <a href="/static/examples.html">(examples></a>
         <hr>
         <script type="application/processing" data-processing-target="my_canvas">
+
+
             void setup(){
                 size(1000, 600);
                 background(100);
@@ -20,6 +23,15 @@
                 fill(0, 0, 255);
                 ohio.disableStyle();
                 shape(ohio,0,0);
+                stateList = states.children;
+                michigan = states.getChild("MI");
+                smooth();
+                shape(states,0,0);
+                fill(0, 0, 255);
+                michigan.disableStyle();
+                shape(michigan,0,0);
+                console.log(stateList);
+
             }
 
         </script>
